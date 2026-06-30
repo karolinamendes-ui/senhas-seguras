@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinkSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container" id="loginScreen">
+        <h1>PinkSpace</h1>
+        <p>Insira a senha para acessar a rede</p>
+        
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Digite a senha secreta...">
+            <div class="error-message" id="errorMessage">Senha incorreta! Tente novamente. 💕</div>
+        </div>
+
+        <button class="btn-login" onclick="checkPassword()">Entrar</button>
+    </div>
+
+    <div class="feed-container" id="feedScreen">
+        <div class="nav-feed">
+            <h2>PinkSpace</h2>
+            <span>❤️ 💬 📥</span>
+        </div>
+
+        <div class="stories-container">
+            <div class="story"><div class="story-inner"></div></div>
+            <div class="story"><div class="story-inner"></div></div>
+            <div class="story"><div class="story-inner"></div></div>
+            <div class="story"><div class="story-inner"></div></div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <div class="post-user-avatar"></div>
+                <div class="post-username">usuario_pink</div>
+            </div>
+            <div class="post-image">✨ Bem-vindo ao Feed Rosa ✨</div>
+            <div class="post-actions">❤️ 💬 🚀</div>
+            <div class="post-caption"><strong>usuario_pink</strong> O feed mais fofo da internet está oficialmente ativo! #pink vibes</div>
+        </div>
+
+        <div class="interactive-footer">
+            <p style="margin-bottom: 15px; font-weight: bold; color: #ff5c8a;">Gostou do espaço secreto?</p>
+            <button class="love-btn" id="interactiveBtn" onclick="triggerSurprise()">Clique aqui! 💖</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
